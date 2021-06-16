@@ -21,33 +21,54 @@ public class User {
 
 
     //insert constructor
+    public User(String email, String username, String password) {
+        this.email = email;
+        this.username = username;
+        this.password = password;
+    }
 
-    public User(long id, String email, String password) {
+    //this is the update constructor
+    public User(long id, String email, String username, String password) {
         this.id = id;
         this.email = email;
         this.username = username;
         this.password = password;
     }
 
-    //update constructor
 
-    public User(long id, String email, String username, String password){
-        this.id = id;
-        this.email = email;
-        this.username = username;
-        this.password = password;
-    }
+//getters and setters
 
     public long getId(){
         return id;
     }
 
-    public void setID(){
+    public void setId(){
         this.id = id;
     }
 
     public String getEmail(){
         return email;
     }
+
+    public void setEmail(String email){
+        this.email = email;
+    }
+
+    public String getUsername(){
+        return username;
+    }
+
+    public void setUsername(String username){
+        this.username = username;
+    }
+
+    public String getPassword(){
+        return password;
+    }
+
+    public void setPassword(String password){
+        this.password = password;
+    }
+}
 
 
