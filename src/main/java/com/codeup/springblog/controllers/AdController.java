@@ -1,6 +1,6 @@
 package com.codeup.springblog.controllers;
 
-import com.codeup.springblog.AdRepository;
+import com.codeup.springblog.DAOs.AdRepository;
 import com.codeup.springblog.services.StringService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class AdController {
-    private final StringService stringService;
+
 
     private final AdRepository adDao;
 
